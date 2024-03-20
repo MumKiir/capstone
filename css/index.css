@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../src/images/lowcost.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 0;
+
+}
+
+h2 {
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Red Rose', serif;
+}
+.white-text {
+    color: #fff; /* White color for 'Sky' */   
+  }
+
+.blue-text {
+    color: #10d6cb; /* Blue color for 'Guard' */
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:#ffff;
+    text-decoration: none;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: #10d6cb;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+.content{
+    margin-top: 14%;
+    color: #ffff;
+    max-width: 620px;
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+.stat{
+    margin-top: 10px;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    background-color: #10d6cb;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer; 
+    height: 60px;
+    width: 200px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    
+}

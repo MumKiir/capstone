@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: #1F192F;        
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    background-color: #2A263A; /* Background color */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px; /* Adjust padding as needed */
+    width: 400px; /* Default width */
+    height: auto; /* Adjustable height */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+h1 {
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Red Rose', serif;
+}
+.white-text {
+    color: #fff; /* White color for 'Sky' */   
+  }
+
+  .blue-text {
+    color: #10d6cb; /* Blue color for 'Guard' */
+  }
+h2 {
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a.start {
+    background-color: #10d6cb;
+    border-color: #1F192F;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    width: calc(100% - 50px); /* Make button width same as form */
+    text-decoration: none; /* Remove default underline */
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 162, 217, 0.5);
+    margin-bottom: 1rem;
+    display: inline-block; /* Ensure it behaves like a block element */
+    text-align: center; /* Center the text horizontally */
+}
+
+.start:hover {
+    background-color: #2A263A;
+    border-color: #10d6cb;
+}

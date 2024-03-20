@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SkyGuard</title>
+    <meta charset="utf-8">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./css/camera.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+  </head>  
+  <body>
+    <h1><span class="white-text">Crop</span><span class="blue-text">Guard</span></h1>
+    
+    <!-- <p>Multiple object detection using pre trained model in TensorFlow.js</p> -->
+
+    <div class="container">
+      
+      <p>Wait for the model to load before clicking the button to enable the webcam - at which point it will become visible to use.</p>
+  
+      <section id="demos" class="invisible">
+        <p>Hold some objects up close to your webcam to get a real-time classification! When ready, click 'enable webcam' below and 
+          accept access to the webcam when the browser asks (check the top left of your window). Now, hold an image of a bird to the 
+          camera; the model should detect it, and a confidence level will be displayed. If a crop predator is detected with high confidence, 
+          an alarm will automatically go off, designed to scare it away without any manual intervention.</p>
+        
+        <div id="liveView" class="camView">
+          <div class="action_buttons">
+            <button id="webcamButton">Enable Webcam</button>
+            <button id="downloadButton">Download Object Detections</button>
+          </div>
+          <video id="webcam" autoplay muted width="640" height="480"></video>
+        </div>
+      </section>
+  
+      <audio id="birdAlarm" src="src/alarm-sound.wav" preload="auto"></audio>
+    </div>
+
+   
+
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    <!-- Load the coco-ssd model to use to recognize things in images -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    
+    <!-- Import the page's JavaScript to do some stuff -->
+    <script src="script.js" defer></script>
+  </body>
+</html>

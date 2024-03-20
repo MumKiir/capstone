@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: #1F192F;        
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    background-color: #2A263A; /* Background color */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px; /* Adjust padding as needed */
+    width: 400px; /* Default width */
+    height: auto; /* Adjustable height */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+h1 {
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Red Rose', serif;
+}
+.white-text {
+    color: #fff; /* White color for 'Sky' */   
+  }
+
+  .blue-text {
+    color: #10d6cb; /* Blue color for 'Guard' */
+  }
+h2 {
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: calc(100% - 30px);
+    padding: 10px;
+    background-color: #2A263A;
+    color: white;
+    border: 1px solid #C6C3C8;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 162, 217, 0.5);
+}
+
+#login_btn {
+    margin-top: 0.2rem;
+    background-color: #10d6cb;
+    border-color: #1F192F;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    width: calc(100% - 2px); /* Make button width same as form */
+}
+
+#login_btn:hover {
+    background-color: #2A263A;
+    border-color: #10d6cb;
+}
+
+.grey-text {
+    color: #C6C3C8;
+}
+
+.blue-text {
+    color: #10d6cb;
+    text-decoration: none;
+}
+
+.blue-text:hover {
+    text-decoration: underline;
+}
+.text-center {
+    font-family: 'Montserrat', sans-serif;
+}
